@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <h1>inicio de estudos desse tal dom</h1>
+
+    <p>aqui mostra o resultado?</p>
+
+    <div id="test"> clque <strong>HERE</strong></div>
+
+    <script>
+
+        var pq = window.document.getElementsByTagName("p")[0]
+        window.document.write(pq.innerText)
+
+        var d = window.document.getElementById('test')
+
+        d.style.background = 'green'
+
+        var e = window.document.querySelector('div#test')
+        e.style.background = 'blue'
+
+    </script>
+
+
+</body>
+</html>
